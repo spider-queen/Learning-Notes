@@ -33,10 +33,3 @@
 <img src="Linux学习笔记.assets/image-20241204215319867.png" alt="Linux vs Windows" style="zoom: 67%;" />
 
 ### 1. 2 Linux安装
-
-
-
-
-
-
-
