@@ -4719,3 +4719,44 @@ def build_tree(nums, idx):
     return node
 ```
 
+
+
+### 二、SQL50
+
+#### 1. 查询
+
+##### 1.1 可回收且低脂的产品
+
+- 题目链接：[1757. 可回收且低脂的产品](https://leetcode.cn/problems/recyclable-and-low-fat-products/)
+- 代码：
+
+```mysql
+select product_id from Products where low_fats = 'Y' and recyclable = 'Y'
+```
+
+---
+
+##### 1.2 寻找用户推荐人
+
+- 题目链接：[584. 寻找用户推荐人](https://leetcode.cn/problems/find-customer-referee/)
+- 代码：
+
+```mysql
+select name 
+from Customer
+where referee_id is null or referee_id != 2;
+```
+
+---
+
+##### 1.3 大的国家
+
+- 题目链接：[595. 大的国家](https://leetcode.cn/problems/big-countries/)
+- 代码：
+
+```mysql
+select name, population, area
+from World
+where area >= 3000000 or population >= 25000000;
+```
+
